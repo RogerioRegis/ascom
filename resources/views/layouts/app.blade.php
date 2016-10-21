@@ -149,6 +149,43 @@
                         <!-- end ALERTS DROPDOWN -->
 
 
+
+
+
+                        <!-- begin USER ACTIONS DROPDOWN -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i>  <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <a href="{{ url('/perfil') }}">
+                                        <i class="fa fa-user"></i> Meu Perfil
+                                    </a>
+                                </li>
+                                
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="{{ url('#') }}">
+                                        <i class="fa fa-gear"></i> Configurações
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="logout_open" href="#logout">
+                                        <i class="fa fa-sign-out"></i> Sair
+                                        <strong>{{ Auth::user()->name }}</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- /.dropdown-menu -->
+                        </li>
+                        <!-- /.dropdown -->
+                        <!-- end USER ACTIONS DROPDOWN -->
+
+
+
+
                     
 
                     <!-- Authentication Links -->
@@ -223,9 +260,44 @@
 
     <!-- /#logout -->
     <!-- Logout Notification jQuery -->
-    <script src="/js/plugins/popupoverlay/logout.js"></script>
+    <script src="js/plugins/popupoverlay/logout.js"></script>
     <!-- HISRC Retina Images -->
     <script src="/js/plugins/hisrc/hisrc.js"></script>
+
+
+<!-- Logout Notification Box -->
+<div id="logout">
+    <div class="logout-message">
+        <img class="img img-logout" src="/img/logo_PMBV.png" alt="pmbv">
+        <h3>
+            <i class="fa fa-sign-out text-green"></i> Pronto para ir?
+        </h3>
+        <p>Selecione "Sair" abaixo se você está pronto<br> para encerrar sua sessão atual.</p>
+        <ul class="list-inline">
+            <li>
+  
+                                    <a href="{{ url('/logout') }}" class="btn btn-green" 
+                                        onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                        <strong>Sair Agora</strong>
+                                    </a>
+
+                                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                        {{ csrf_field() }}
+                                    </form>
+
+
+
+            </li>
+            <li>
+                <button class="logout_close btn btn-green">Cancelar</button>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /#logout -->
+
+
 
     <!-- PAGE LEVEL PLUGIN SCRIPTS -->
     <!-- HubSpot Messenger -->
