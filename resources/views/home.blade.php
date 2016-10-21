@@ -1,17 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
 
-                <div class="panel-body">
-                    You are logged in!
-                </div>
-            </div>
+<!-- begin PAGE TITLE ROW -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="page-title">
+            <h1>Auditoria
+                <small>Secretaria Municipal de Saúde</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i>  <a href="/">Início</a>
+                </li>
+                <li class="active">Vizualização Geral dos Controles de Contrato</li>
+            </ol>
         </div>
     </div>
+    <!-- /.col-lg-12 -->
 </div>
+<!-- /.row -->
+<!-- end PAGE TITLE ROW -->
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">Demandas</div>
+            <div class="panel-body">
+            Demandas da Imprenssa
+       </div>
+    </div>
+    
+
 @endsection
