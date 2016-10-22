@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'ASCOM - SMSA') }}</title>
+    <title>@yield('title', 'ASCOM - SMSA')</title>
 
     <!-- Styles 
     <link href="/css/app.css" rel="stylesheet">-->

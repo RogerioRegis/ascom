@@ -1,5 +1,7 @@
 @extends('layouts.auth')
 
+@section('title') Login @stop
+
 @section('content')
 
 <br>

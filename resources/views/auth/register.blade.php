@@ -1,5 +1,7 @@
 @extends('layouts.auth')
 
+@section('title') Registrar @stop
+
 @section('content')
 
 <br><br><br>

@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'ASCOM - SMSA') }}</title>
+    <title>@yield('title', 'ASCOM - SMSA')</title>
 
     <!-- Styles 
     <link href="/css/app.css" rel="stylesheet">-->
@@ -100,8 +100,8 @@
 
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Registrar</a></li>
+                        <li><a href="{{ url('/login') }}"> <i class="fa fa-lock"></i> Login</a></li>
+                        <li><a href="{{ url('/register') }}"> <i class="fa fa-edit"></i> Registrar</a></li>
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
