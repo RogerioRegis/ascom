@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'ASCOM - SMSA') }}</title>
 
     <!-- Styles 
     <link href="/css/app.css" rel="stylesheet">-->
@@ -75,8 +75,6 @@
                 <!-- end BRAND HEADING -->
 
 
-
-
                 <div class="nav-top">
 
 
@@ -133,26 +131,14 @@
                 <!-- end MESSAGES/ALERTS/TASKS/USER ACTIONS DROPDOWNS -->
 
 
-
-
-
-
-
-
-
-
-
                 </div>
 
     </nav>
 
-
  
                     @yield('content')
-             
-         
-     
-    
+
+
     </div>
     <!-- /#wrapper -->
 

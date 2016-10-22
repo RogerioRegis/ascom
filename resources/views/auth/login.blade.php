@@ -24,6 +24,7 @@
                 <div class="clearfix"></div>
             </div>
 
+
             <div class="portlet-body">
                 <form  method="POST" action="{{ url('/login') }}" accept-charset="UTF-8" role="form">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
@@ -93,9 +94,5 @@
         </div>
     </div>
 </div>
-
-
-
-
 
 @endsection
