@@ -11,7 +11,7 @@
             
             <div class="page-title"><ol class="breadcrumb"></ol></div>
 
-            <!-- include('includes.erro') -->
+            @include('section.erro')
 
             <div class="portlet portlet-green">
                 <div class="portlet-heading">
@@ -90,7 +90,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Register
+                                    Registrar
                                 </button>
                             </div>
                         </div>
@@ -104,9 +104,5 @@
         <!-- End Basic Form Example -->
     </div>
 </div>
-
-
-
-
 
 @endsection

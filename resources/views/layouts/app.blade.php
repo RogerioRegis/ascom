@@ -88,8 +88,7 @@
                         </li>
                         <!-- /.dropdown -->
                         <!-- end ALERTS DROPDOWN -->
-
-
+                        
 
                         <!-- Authentication Links -->
                         @if (Auth::guest())
@@ -98,7 +97,7 @@
                         @else
                         <li>
                             <a role="button" aria-expanded="false">
-                                <i> Bem Vindo! </i> {{ Auth::user()->name }}
+                                <i class="text-orange"> Bem Vindo! </i> <strong>{{ Auth::user()->name }}</strong>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
@@ -189,37 +188,37 @@
                         <!-- begin DASHBOARD LINK -->
                         <li>
                             <a class="active" href="/home">
-                                <i class="fa fa-home"></i> Início
+                                <i class="fa fa-home"></i> INÍCIO
                             </a>
                         </li>
 
                         <li>
                             <a class="active" href="/demandas">
-                                <i class="fa fa-home"></i> DEMANDAS
+                                <i class="fa fa-bullhorn"></i> DEMANDAS
                             </a>
                         </li>
 
                         <li>
-                            <a class="active" href="/deadline">
-                                <i class="fa fa-home"></i> DEADLINE
+                            <a class="active" href="/deadlines">
+                                <i class="fa fa-bell"></i> DEADLINE
                             </a>
                         </li>
 
                         <li>
                             <a class="active" href="/intrevistas">
-                                <i class="fa fa-home"></i> INTREVISTAS
+                                <i class="fa fa-microphone"></i> INTREVISTAS
                             </a>
                         </li>
 
                         <li>
                             <a class="active" href="/calendario">
-                                <i class="fa fa-home"></i> CALENDÁRIO
+                                <i class="fa fa-calendar"></i> CALENDÁRIO
                             </a>
                         </li>
 
                         <li>
                             <a class="active" href="/relatorios">
-                                <i class="fa fa-home"></i> RELATÓRIOS
+                                <i class="fa fa-file-pdf-o"></i> RELATÓRIOS
                             </a>
                         </li>
                         <!-- end DASHBOARD LINK -->

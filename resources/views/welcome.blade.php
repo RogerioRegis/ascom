@@ -116,36 +116,6 @@
                                 <i class="fa fa-home"></i> Início
                             </a>
                         </li>
-
-                        <li>
-                            <a class="active" href="/">
-                                <i class="fa fa-home"></i> DEMANDAS
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="active" href="/">
-                                <i class="fa fa-home"></i> DEADLINE
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="active" href="/">
-                                <i class="fa fa-home"></i> INTREVISTAS
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="active" href="/">
-                                <i class="fa fa-home"></i> CALENDÁRIO
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="active" href="/">
-                                <i class="fa fa-home"></i> RELATÓRIOS
-                            </a>
-                        </li>
                         <!-- end DASHBOARD LINK -->
                         
 
@@ -231,7 +201,7 @@
                         </div>
                         <div class="col-lg-2 col-sm-6">
                             <div class="circle-tile">
-                                <a href="#">
+                                <a href="/demandas">
                                     <div class="circle-tile-heading green">
                                         <i class="fa fa-bullhorn fa-fw fa-3x"></i>
                                     </div>
@@ -249,7 +219,7 @@
                         </div>
                         <div class="col-lg-2 col-sm-6">
                             <div class="circle-tile">
-                                <a href="#">
+                                <a href="/deadlines">
                                     <div class="circle-tile-heading orange">
                                         <i class="fa fa-bell fa-fw fa-3x"></i>
                                     </div>
@@ -267,7 +237,7 @@
                         </div>
                         <div class="col-lg-2 col-sm-6">
                             <div class="circle-tile">
-                                <a href="#">
+                                <a href="/entrevistas">
                                     <div class="circle-tile-heading blue">
                                         <i class="fa fa-microphone fa-fw fa-3x"></i>
                                     </div>

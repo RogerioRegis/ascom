@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Home @stop
+@section('title') Dead Lines @stop
 
 @section('content')
 
@@ -9,8 +9,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-title">
-                                <h1>Painel de Instrumentos
-                                    <small>Visão Geral do Conteúdo</small>
+                                <h1>Deadlines
+                                    <small>Alertas da Imprensa</small>
                                 </h1>
                                 <ol class="breadcrumb">
                                     <li class="active"><i class="fa fa-home"></i> Home</li>
@@ -46,6 +46,7 @@
                     <!-- /.row -->
                     <!-- end PAGE TITLE AREA -->
 
-                    @include('section.dashboard')
 
+
+    
 @endsection

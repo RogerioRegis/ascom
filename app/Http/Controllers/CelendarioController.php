@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class DemandasController extends Controller
+class CelendarioController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -25,9 +25,9 @@ class DemandasController extends Controller
      */
     public function index()
     {
-        return view ('demandas.index');
+        return view ('calendario.index');
     }
-    
+
     /**
      * Show the form for creating a new resource.
      *

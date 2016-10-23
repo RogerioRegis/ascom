@@ -15,9 +15,6 @@
 
                 <!-- begin BRAND HEADING -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".sidebar-collapse">
-                        <i class="fa fa-bars"></i> Menu
-                    </button>
                     <div class="navbar-brand">
                         <a href="/">
                             <img src="/img/flex-admin-logo@1x.png" data-1x="/img/flex-admin-logo@1x.png" data-2x="/img/flex-admin-logo@2x.png" class="hisrc img-responsive" alt="">

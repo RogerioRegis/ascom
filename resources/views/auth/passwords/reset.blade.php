@@ -1,4 +1,6 @@
-@extends('layouts.app')
+@extends('layouts.auth')
+
+@section('title') Registrar @stop
 
 @section('content')
 
@@ -58,7 +60,7 @@
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Reset Password
+                                    Redefinir Senha
                                 </button>
                             </div>
                         </div>
@@ -68,4 +70,5 @@
         </div>
     </div>
 </div>
+
 @endsection

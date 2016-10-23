@@ -19,6 +19,12 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/perfil', 'PerfilController@index');
+
 Route::get('/demandas', 'DemandasController@index');
 
+Route::get('/deadlines', 'DeadlinesController@index');
 
+Route::get('/entrevistas', 'EntrevistasController@index');
+Route::get('/calendario', 'CelendarioController@index');
+Route::get('/relatorios', 'RelatoriosController@index');

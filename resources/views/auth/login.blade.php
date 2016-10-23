@@ -12,7 +12,7 @@
             Assessoria de Comunicação
         </div>
         
-        
+        @include('section.erro')
         
         <div class="portlet portlet-green">
             <div class="portlet-heading login-heading">

@@ -6,18 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class DemandasController extends Controller
+class IntrevistasController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -25,9 +15,9 @@ class DemandasController extends Controller
      */
     public function index()
     {
-        return view ('demandas.index');
+        //
     }
-    
+
     /**
      * Show the form for creating a new resource.
      *
