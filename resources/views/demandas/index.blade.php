@@ -5,20 +5,15 @@
 @section('content')
 
                     <!-- begin PAGE TITLE AREA -->
-                    <!-- Use this section for each page's title and breadcrumb layout. In this example a date range picker is included within the breadcrumb. -->
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-title">
-                                <h1>Demandas
-                                    <small>da Imprensa</small>
-                                </h1>
+                                <h1>Demandas <small>da Imprensa</small></h1>
                                 <ol class="breadcrumb">
-                                    <li class="active"><i class="fa fa-home"></i> Home</li>
+                                    <li><i class="fa fa-home"></i><a href="/"> Home </a></li> <li class="active"> Demandas </li>
                                     <li class="pull-right">
                                         <div class="btn btn-green btn-square date-picker">
-
                                             <i class="fa fa-calendar"></i>
-
                                             <script language="JavaScript">
                                                 document.write("<font color='#fff' size='3' face='arial'>")
                                                 var mydate = new Date()
@@ -35,7 +30,6 @@
                                                 document.write("   " + dayarray[day] + ", " + daym + " " + montharray[month] + year + " ")
                                                 document.write("</b></i></font>")
                                             </script>
-
                                         </div>
                                     </li>
                                 </ol>
@@ -45,6 +39,7 @@
                     </div>
                     <!-- /.row -->
                     <!-- end PAGE TITLE AREA -->
+
 
               <!-- begin ADVANCED TABLES ROW -->
                 <div class="row">

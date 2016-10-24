@@ -205,8 +205,8 @@
                         </li>
 
                         <li>
-                            <a class="active" href="/intrevistas">
-                                <i class="fa fa-microphone"></i> INTREVISTAS
+                            <a class="active" href="/entrevistas">
+                                <i class="fa fa-microphone"></i> ENTREVISTAS
                             </a>
                         </li>
 

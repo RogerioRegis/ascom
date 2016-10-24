@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Dead Lines @stop
+@section('title') Entrevistas @stop
 
 @section('content')
 
@@ -8,9 +8,9 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-title">
-                                <h1>Deadlines <small>Alertas da Imprensa</small></h1>
+                                <h1>Entrevistas <small>Agendamento</small></h1>
                                 <ol class="breadcrumb">
-                                    <li><i class="fa fa-home"></i><a href="/"> Home </a></li> <li class="active"> Dead Lines </li>
+                                    <li><i class="fa fa-home"></i><a href="/"> Home </a></li> <li class="active"> Entrevistas </li>
                                     <li class="pull-right">
                                         <div class="btn btn-green btn-square date-picker">
                                             <i class="fa fa-calendar"></i>
