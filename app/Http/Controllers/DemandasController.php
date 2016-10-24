@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\DemandaRequest;
+use App\Demanda;
 
 class DemandasController extends Controller
 {
@@ -35,7 +37,7 @@ class DemandasController extends Controller
      */
     public function create()
     {
-        //
+        return view('demandas.create'); 
     }
 
     /**
@@ -46,7 +48,9 @@ class DemandasController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        demanda::create($request->all());
+        
+        return redirect()->route('demandas.index');
     }
 
     /**

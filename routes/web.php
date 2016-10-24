@@ -19,14 +19,14 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::get('/perfil', 'PerfilController@index');
+Route::resource('perfil', 'PerfilController');
 
-Route::get('/demandas', 'DemandasController@index');
+Route::resource('demandas', 'DemandasController');
 
-Route::get('/deadlines', 'DeadlinesController@index');
+Route::resource('deadlines', 'DeadlinesController');
 
-Route::get('/entrevistas', 'EntrevistasController@index');
+Route::resource('entrevistas', 'EntrevistasController');
 
-Route::get('/calendario', 'CelendarioController@index');
+Route::resource('calendario', 'CelendarioController');
 
-Route::get('/relatorios', 'RelatoriosController@index');
+Route::resource('relatorios', 'RelatoriosController');
