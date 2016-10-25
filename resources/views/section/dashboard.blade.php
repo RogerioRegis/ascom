@@ -1,7 +1,7 @@
                     
                     <!-- begin DASHBOARD CIRCLE TILES -->
                     <div class="row">
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
                                 <a href="{{ url('/perfil') }}">
                                     <div class="circle-tile-heading dark-blue">
@@ -20,7 +20,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
                                 <a href="{{ url('/demandas') }}">
                                     <div class="circle-tile-heading green">
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
                                 <a href="{{ url('/deadlines') }}">
                                     <div class="circle-tile-heading orange">
@@ -56,7 +56,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                    </div>
+                    <!-- end DASHBOARD CIRCLE TILES -->
+
+
+
+
+                    <!-- begin DASHBOARD CIRCLE TILES -->
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
                                 <a href="{{ url('/entrevistas') }}">
                                     <div class="circle-tile-heading blue">
@@ -75,7 +83,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
                                 <a href="{{ url('/relatorios') }}">
                                     <div class="circle-tile-heading red">
@@ -94,7 +102,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-6">
+                        <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
                                 <a href="{{ url('/mencionados') }}">
                                     <div class="circle-tile-heading purple">
