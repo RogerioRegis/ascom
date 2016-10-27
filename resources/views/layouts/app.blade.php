@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-
         @include('section.head')
-
     </head>
-
     <body>
-
         <div id="wrapper">
-
             <!-- begin TOP NAVIGATION -->
             <nav class="navbar-top" role="navigation">
 
@@ -117,41 +112,36 @@
                         @endif
 
 
-                        <!-- begin USER ACTIONS DROPDOWN -->
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="fa fa-user"></i>  <i class="fa fa-caret-down"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li>
-                                    <a href="{{ url('/perfil') }}">
-                                        <i class="fa fa-user"></i> Meu Perfil
-                                    </a>
-                                </li>
+            <!-- begin USER ACTIONS DROPDOWN -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-user"></i>  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-user">
+                    <li>
+                        <a href="/perfil">
+                            <i class="fa fa-user"></i> Meu Perfil
+                        </a>
+                    </li>
 
-                                <li class="divider"></li>
+                    <li class="divider"></li>
 
-                                <li>
-                                    <a href="{{ url('#') }}">
-                                        <i class="fa fa-gear"></i> Configurações
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ url('/logout') }}"
-                                       onclick="event.preventDefault();
-                                               document.getElementById('logout-form').submit();">
-                                       <i class="fa fa-sign-out"></i> Sair <strong>{{ Auth::user()->name }}</strong>
-                                    </a>
-
-                                    <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </li>
-                            </ul>
-                            <!-- /.dropdown-menu -->
-                        </li>
-                        <!-- /.dropdown -->
-                        <!-- end USER ACTIONS DROPDOWN -->
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-gear"></i> Configurações
+                        </a>
+                    </li>
+                    <li>
+                        <a class="logout_open" href="#logout">
+                            <i class="fa fa-sign-out"></i> Sair
+                            <strong>{{ Auth::user()->name }}</strong>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.dropdown-menu -->
+            </li>
+            <!-- /.dropdown -->
+            <!-- end USER ACTIONS DROPDOWN -->
 
 
                     </ul>
@@ -253,17 +243,7 @@
 
 
         <!-- Scripts -->
-        <script src="/js/app.js"></script>
-
-        <!-- /#logout -->
-        <!-- Logout Notification jQuery -->
-        <script src="/js/plugins/popupoverlay/logout.js"></script>
-        <!-- HISRC Retina Images -->
-        <script src="/js/plugins/hisrc/hisrc.js"></script>
-
-        
         @include('section.footer')
-
 
     </body>
 </html>

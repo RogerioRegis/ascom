@@ -1,22 +1,30 @@
 
-    <!-- Logout Notification Box -->
-    <div id="logout">
-        <div class="logout-message">
-            <img class="img-circle img-logout" src="img/profile-pic.jpg" alt="">
-            <h3>
-                <i class="fa fa-sign-out text-green"></i> Ready to go?
-            </h3>
-            <p>Select "Logout" below if you are ready<br> to end your current session.</p>
-            <ul class="list-inline">
-                <li>
-                    <a href="login.html" class="btn btn-green">
-                        <strong>Logout</strong>
-                    </a>
-                </li>
-                <li>
-                    <button class="logout_close btn btn-green">Cancel</button>
-                </li>
-            </ul>
-        </div>
+<!-- Logout Notification Box -->
+<div id="logout">
+    <div class="logout-message">
+        <img class="img img-logout" src="/img/logo_ASCOM.png" alt="pmbv">
+        <h3>
+            <i class="fa fa-sign-out text-green"></i> Pronto para ir?
+        </h3>
+        <p>Selecione "Sair" abaixo se você está pronto<br> para encerrar sua sessão atual.</p>
+        <ul class="list-inline">
+            <li>
+
+                <a href="{{ url('/logout') }}" class="btn btn-red"
+                   onclick="event.preventDefault();
+                           document.getElementById('logout-form').submit();">
+                    <strong>Sair Agora</strong>
+                </a>
+
+                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
+
+            </li>
+            <li>
+                <button class="logout_close btn btn-green">Cancelar</button>
+            </li>
+        </ul>
     </div>
-    <!-- /#logout -->
+</div>
+<!-- /#logout -->

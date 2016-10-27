@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-
         @include('section.head')
-
     </head>
-
-    <body>
-
-        <div id="wrapper">
-
+    <body class="login">
+        <div class="container">
             <!-- begin TOP NAVIGATION -->
             <nav class="navbar-top" role="navigation">
 
@@ -70,9 +65,8 @@
                     <!-- end MESSAGES/ALERTS/TASKS/USER ACTIONS DROPDOWNS -->
                 </div>
             </nav>
-
+            <!-- end TOP NAVIGATION -->
             @yield('content')
-
         </div>
         <!-- /#wrapper -->
         <!-- Scripts -->
