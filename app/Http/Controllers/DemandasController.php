@@ -3,20 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\DemandaRequest;
+use App\Http\Requests;
 use App\Demanda;
 
-class DemandasController extends Controller
-{
+class DemandasController extends Controller {
+
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct() {
         $this->middleware('auth');
     }
 
@@ -25,19 +23,20 @@ class DemandasController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        return view ('demandas.index');
+    public function index() {
+
+        $demandas = Demanda::all();
+
+        return view('demandas.index', compact('demandas'));
     }
-    
+
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        return view('demandas.create'); 
+    public function create() {
+        return view('demandas.create');
     }
 
     /**
@@ -46,10 +45,10 @@ class DemandasController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        demanda::create($request->all());
-        
+    public function store(Request $request) {
+
+        Demanda::create($request->all());
+
         return redirect()->route('demandas.index');
     }
 
@@ -59,8 +58,7 @@ class DemandasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
+    public function show($id) {
         //
     }
 
@@ -70,8 +68,7 @@ class DemandasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
+    public function edit($id) {
         //
     }
 
@@ -82,8 +79,7 @@ class DemandasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+    public function update(Request $request, $id) {
         //
     }
 
@@ -93,8 +89,8 @@ class DemandasController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
+    public function destroy($id) {
         //
     }
+
 }

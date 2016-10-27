@@ -29,110 +29,54 @@
 <table class="table table-bordered">
     <thead>
         <tr class="active">
-            <th class="text-center" colspan="1">CONTROLE DE CONTRATO</th>
+            <th class="text-center" colspan="1">FORMULÁRIO DE DEMANDA</th>
         </tr>
     </thead>
 </table>
 
-<form action="{{ route('demandas.store') }}" method="POST">
-    <?= csrf_field(); ?>
+<form action="{{ route('demandas.store') }}" method="POST"> 
+{{ csrf_field() }}
     <div class="row">
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="numero_processo">Número do PROCESSO</label>
-                        <input type="text" class="form-control" name="numero_processo" placeholder="00/ano/local/vol">
+                        <label for="veiculo">VEÍCULO</label>
+                        <input type="text" class="form-control" name="veiculo">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="origem">ORIGEM</label>
-                        <input type="text" class="form-control" name="origem" placeholder="Departamento">
+                        <label for="data">DATA</label>
+                        <input type="date" class="form-control" name="data" placeholder="dd/mm/aaaa">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="tipo_licitacao">LICITAÇÃO</label>
-                        <select class="form-control" name="tipo_licitacao">
-                            <option>Escolha um tipo</option>
-                            <option>ADESÃO A ARP</option>
-                            <option>TIPO 2</option>
-                            <option>TIPO 3</option>
-                        </select>
+                        <label for="deadline">DEAD LINE</label>
+                        <input type="time" class="form-control" name="deadline" placeholder="Hora Limite">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="nome">EMPENHO</label>
-                        <select class="form-control" name="tipo_empenho">
-                            <option>Escolha um tipo</option>
-                            <option>GLOBAL</option>
-                            <option>TIPO 2</option>
-                            <option>TIPO 3</option>
+                        <label for="status">STATUS</label>
+                        <select class="form-control" name="status">
+                            <option value="danger">EM ABERTO</option>
+                            <option value="green">EXECULTADO</option>
                         </select>
                     </div>
                 </div>
             </div>
-            <div class="form-group">
-                <label for="nome">CREDOR</label>
-                <input type="text" class="form-control" name="credor" placeholder="Razão Social">
-            </div>
 
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="email">VALOR</label>
-                        <input type="text" class="form-control" name="valor_global" placeholder="R$ 0,00">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="email">VIGÊNCIA DO CONTRATO</label>
-                        <input type="text" class="form-control" name="vigencia_meses" placeholder="Em Meses">
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="data">DATA INÍCIO</label>
-                        <input type="date" class="form-control" name="vigencia_inicio" placeholder="Início">
-                    </div>
 
-                </div>
-                <div class="col-sm-6">
-                    <div class="form-group">
-                        <label for="data">DATA TERMINO</label>
-                        <input type="date" class="form-control" name="vigencia_fim" placeholder="Término">
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="adtive">1º ADITIVO</label>
-                        <input type="text" class="form-control" name="aditivo_1" placeholder="1º aditivo">
-                    </div>
-                </div>
-                <div class="col-md-6">  
-                    <div class="form-group">
-                        <label for="adtive">2º ADITIVO</label>
-                        <input type="text" class="form-control" name="aditivo_2" placeholder="2º aditivo">
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- Campo para o Objeto -->
         <div class="col-md-6">
             <div class="form-group">
-                <label for="mensagem">OBJETO</label>
-                <textarea class="form-control" name="objeto" rows="16" placeholder="Contratação - Forma - Quantitativo - Preço"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="adtive">FICAL(S) - GESTOR</label>
-                <input type="text" class="form-control" name="fical_gestor" placeholder="Fiscal(s) Gestor(s)">
+                <label for="obs">OBSERVAÇÕES</label>
+                <textarea class="form-control" name="obs" rows="5" placeholder="Obs:"></textarea>
             </div>
         </div>
     </div>
