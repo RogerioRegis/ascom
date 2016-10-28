@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\Http\Requests;
+use App\Http\Requests\DemandaRequest;
 use App\Demanda;
 
 class DemandasController extends Controller {
@@ -59,7 +60,10 @@ class DemandasController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function show($id) {
-        //
+
+        $demanda = Demanda::findOrFail($id);
+
+        return view('demandas.show', compact('demanda'));
     }
 
     /**
@@ -69,7 +73,10 @@ class DemandasController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function edit($id) {
-        //
+
+        $demandas = Demanda::findOrFail($id);
+
+        return view('demandas.edit', compact('demandas'));
     }
 
     /**
@@ -79,8 +86,13 @@ class DemandasController extends Controller {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id) {
-        //
+    public function update(DemandaRequest $request, $id) {
+
+        $demandas = Demanda::findOrFail($id);
+
+        $demandas->update($request->all());
+
+        return redirect()->route('demandas.index');
     }
 
     /**
@@ -90,7 +102,12 @@ class DemandasController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function destroy($id) {
-        //
+
+        $demandas = Demanda::findOrFail($id);
+
+        $demandas->delete();
+
+        return redirect()->route('demandas.index');
     }
 
 }
