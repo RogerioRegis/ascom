@@ -19,15 +19,18 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
-Route::resource('perfil', 'PerfilController');
-
 Route::resource('demandas', 'DemandasController');
+
+Route::resource('clipping', 'ClippingController');
+Route::resource('clippingjornal', 'ClippingJornalController');
+Route::resource('clippingradiotv', 'ClippingRadiotvController');
+Route::resource('clippingweb', 'ClippingWebController');
+
+Route::resource('perfil', 'PerfilController');
 
 Route::resource('deadlines', 'DeadlinesController');
 
 Route::resource('entrevistas', 'EntrevistasController');
-
-Route::resource('clipping', 'ClippingController');
 
 Route::resource('calendario', 'CelendarioController');
 

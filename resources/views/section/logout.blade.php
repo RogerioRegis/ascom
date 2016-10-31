@@ -2,7 +2,7 @@
 <!-- Logout Notification Box -->
 <div id="logout">
     <div class="logout-message">
-        <img class="img img-logout" src="/img/logo_ASCOM.png" alt="pmbv">
+        <img class="img img-logout" src="/img/Logo_ASCOM.png" alt="pmbv">
         <h3>
             <i class="fa fa-sign-out text-green"></i> Pronto para ir?
         </h3>

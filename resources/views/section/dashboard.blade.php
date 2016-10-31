@@ -85,7 +85,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
-                                <a href="{{ url('/relatorios') }}">
+                                <a href="{{ url('/clipping') }}">
                                     <div class="circle-tile-heading red">
                                         <i class="fa fa-paperclip fa-fw fa-3x"></i>
                                     </div>

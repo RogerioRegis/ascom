@@ -82,7 +82,7 @@
     </div>
 
     <button type="submit" class="btn btn-success">Salvar</button>
-    <a href="{{ url('demandas') }}" class="btn btn-blue">Cancelar</a>
+    <a href="{{ url('/clipping') }}" class="btn btn-blue">Cancelar</a>
 
 </form>
 

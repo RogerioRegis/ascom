@@ -8,10 +8,9 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="page-title">
-                                <h1>Clipping <small>da Internet</small></h1>
+                                <h1>Clipping <small>da Imprensa</small></h1>
                                 <ol class="breadcrumb">
-                                    <li><i class="fa fa-home"></i><a href="/"> Home </a></li>
-                                    <li class="active"> Clipping </li>
+                                    <li><i class="fa fa-home"></i><a href="/"> Home </a></li> <li class="active"> Demandas </li>
                                     @include('section.datahora')
                                 </ol>
                             </div>
@@ -26,7 +25,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
-                                <a href="{{ url('/clippingradiotv/create') }}">
+                                <a href="{{ url('/clipping/create') }}">
                                     <div class="circle-tile-heading dark-blue">
                                         <i class="fa fa-television fa-fw fa-3x"></i>
                                     </div>
@@ -45,7 +44,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
-                                <a href="{{ url('/clippingjornal/create') }}">
+                                <a href="{{ url('/clipping') }}">
                                     <div class="circle-tile-heading green">
                                         <i class="fa fa-newspaper-o fa-fw fa-3x"></i>
                                     </div>
@@ -63,7 +62,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
-                                <a href="{{ url('/clippingweb/create') }}">
+                                <a href="{{ url('/clipping/create') }}">
                                     <div class="circle-tile-heading orange">
                                         <i class="fa fa-at fa-fw fa-3x"></i>
                                     </div>

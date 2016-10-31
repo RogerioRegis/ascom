@@ -192,6 +192,12 @@
                         </li>
 
                         <li>
+                            <a class="active" href="/clipping">
+                                <i class="fa fa-paperclip"></i> CLIPPING
+                            </a>
+                        </li>
+                        
+                        <li>
                             <a class="active" href="/deadlines">
                                 <i class="fa fa-bell"></i> DEADLINE
                             </a>
@@ -200,12 +206,6 @@
                         <li>
                             <a class="active" href="/entrevistas">
                                 <i class="fa fa-microphone"></i> ENTREVISTAS
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a class="active" href="/clipping">
-                                <i class="fa fa-paperclip"></i> CLIPPING
                             </a>
                         </li>
 
