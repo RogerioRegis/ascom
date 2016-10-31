@@ -130,7 +130,7 @@
 
                     <li>
                         <a href="#">
-                            <i class="fa fa-gear"></i> Configurações
+                            <i class="fa fa-gear fa-spin"></i> Configurações
                         </a>
                     </li>
                     <li>
@@ -202,6 +202,12 @@
                                 <i class="fa fa-microphone"></i> ENTREVISTAS
                             </a>
                         </li>
+                        
+                        <li>
+                            <a class="active" href="/clipping">
+                                <i class="fa fa-paperclip"></i> CLIPPING
+                            </a>
+                        </li>
 
                         <li>
                             <a class="active" href="/calendario">
@@ -224,9 +230,6 @@
             <!-- /.navbar-side -->
             <!-- end SIDE NAVIGATION -->
 
-
-
-
             <!-- begin MAIN PAGE CONTENT -->
             <div id="page-wrapper">
 
@@ -234,16 +237,19 @@
 
                     @yield('content')
 
+                    
+                
                 </div>
                 <!-- /.page-content -->
-
+            
+            <hr>
+            
             </div>
             <!-- /#page-wrapper -->
             <!-- end MAIN PAGE CONTENT -->
 
         </div>
         <!-- /#wrapper -->
-
 
         <!-- Scripts -->
         @include('section.footer')

@@ -41,7 +41,7 @@
                                     <td class="text-center active"><strong>DEADLINE</strong><br>
                                 </tr>
                                 <tr>
-                                    <td class="text-center"><strong class="text-primary">{{$demanda->veiculo}}</strong></td>
+                                    <td class="text-center" style="text-transform:uppercase"><strong class="text-primary">{{$demanda->veiculo}}</strong></td>
                                     <td class="text-center">{{$demanda->data}}</td>
                                     <td class="text-center">{{$demanda->deadline}}</td>
                                 </tr>

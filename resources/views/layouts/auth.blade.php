@@ -67,6 +67,9 @@
             </nav>
             <!-- end TOP NAVIGATION -->
             @yield('content')
+
+            <hr>
+            
         </div>
         <!-- /#wrapper -->
         <!-- Scripts -->

@@ -32,6 +32,8 @@
     </thead>
 </table>
 
+@include('section.erro')
+
 {!! Form::model($demandas, ['route' => ['demandas.update', $demandas->id], 'method' => 'PUT']) !!}
 
 <div class="row">
@@ -40,7 +42,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     {!! Form::label('veiculo', 'VEÍCULO') !!}
-                    {!! Form::text('veiculo', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('veiculo', null, ['class' => 'form-control', 'style="text-transform:uppercase"', 'autofocus']) !!}
                 </div>
           
                 <div class="form-group">
@@ -48,27 +50,29 @@
                     {!! Form::date('data', null, ['class' => 'form-control']) !!}
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     {!! Form::label('deadline', 'DEADLINE') !!}
                     {!! Form::time('deadline', null, ['class' => 'form-control']) !!}
                 </div>
-            </div>
-            <div class="col-md-6">
                 <div class="form-group">
-                    {!! Form::label('status', 'STATUS') !!}
-                    {!! Form::text('status', null, ['class' => 'form-control']) !!}
+                    <div class="form-group">
+                        <label for="status">STATUS</label>
+                        <select class="form-control" name="status">
+                            <option value="danger" class="text-red"><strong>EM ABERTO</strong></option>
+                            <option value="green"><strong>EXECULTADO</strong></option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
     <!-- Campo para o Obseervações -->
     <div class="col-md-6">
         <div class="form-group">
             {!! Form::label('obs', 'OBS:') !!}
-            {!! Form::textarea('obs', null, ['class' => 'form-control', 'rows' => '6']) !!}
+            {!! Form::textarea('obs', null, ['class' => 'form-control', 'rows' => '5']) !!}
         </div>
     </div>
 </div>
@@ -78,7 +82,5 @@
 <a class="btn btn-default" href="/demandas"><i class="fa fa-reply"></i> Cancelar</a>
 
 {!! Form::close() !!}
-
-
 
 @endsection

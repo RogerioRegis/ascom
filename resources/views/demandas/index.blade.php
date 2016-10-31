@@ -51,7 +51,7 @@
                             @foreach($demandas as $demanda)
 
                             <tr class="odd gradeX">
-                                <td><a href="{{ route('demandas.show', $demanda->id) }}">{{$demanda->veiculo}}</a></td>
+                                <td style="text-transform:uppercase"><a href="{{ route('demandas.show', $demanda->id) }}">{{$demanda->veiculo}}</a></td>
                                 <td>{{$demanda->data}}</td>
                                 <td>{{$demanda->deadline}}</td>
                                 <td class="center"><button class="btn btn-xs btn-{{$demanda->status}}">Status da Demanda</button></td>

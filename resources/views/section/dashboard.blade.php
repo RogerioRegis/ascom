@@ -87,15 +87,15 @@
                             <div class="circle-tile">
                                 <a href="{{ url('/relatorios') }}">
                                     <div class="circle-tile-heading red">
-                                        <i class="fa fa-file-pdf-o fa-fw fa-3x"></i>
+                                        <i class="fa fa-paperclip fa-fw fa-3x"></i>
                                     </div>
                                 </a>
                                 <div class="circle-tile-content red">
                                     <div class="circle-tile-description text-faded">
-                                        PDF
+                                        JORNALISMO
                                     </div>
                                     <div class="circle-tile-number text-faded">
-                                        Relatórios
+                                        Clipping
                                         <span id="sparklineC"></span>
                                     </div>
                                     <a href="{{ url('/relatorios') }}" class="circle-tile-footer">Mais Informações <i class="fa fa-chevron-circle-right"></i></a>
@@ -104,7 +104,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
-                                <a href="{{ url('/mencionados') }}">
+                                <a href="{{ url('#/mencionados') }}">
                                     <div class="circle-tile-heading purple">
                                         <i class="fa fa-comments fa-fw fa-3x"></i>
                                     </div>

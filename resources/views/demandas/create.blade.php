@@ -42,7 +42,7 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="veiculo">VEÍCULO</label>
-                        <input type="text" class="form-control" name="veiculo">
+                        <input type="text" class="form-control" style="text-transform:uppercase" name="veiculo">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -63,8 +63,8 @@
                     <div class="form-group">
                         <label for="status">STATUS</label>
                         <select class="form-control" name="status">
-                            <option value="danger">EM ABERTO</option>
-                            <option value="green">EXECULTADO</option>
+                            <option value="orange"><strong class="text-red">EM ABERTO</strong></option>
+                            <option value="green"><strong class="text-success">EXECULTADO</strong></option>
                         </select>
                     </div>
                 </div>

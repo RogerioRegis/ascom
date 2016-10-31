@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\DemandaRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Requests;
-use App\Http\Requests\DemandaRequest;
+
 use App\Demanda;
+use App\Http\Requests;
 
 class DemandasController extends Controller {
 
@@ -46,7 +47,7 @@ class DemandasController extends Controller {
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request) {
+    public function store(DemandaRequest $request) {
 
         Demanda::create($request->all());
 

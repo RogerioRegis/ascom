@@ -27,6 +27,8 @@ Route::resource('deadlines', 'DeadlinesController');
 
 Route::resource('entrevistas', 'EntrevistasController');
 
+Route::resource('clipping', 'ClippingController');
+
 Route::resource('calendario', 'CelendarioController');
 
 Route::resource('relatorios', 'RelatoriosController');
