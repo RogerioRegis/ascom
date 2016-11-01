@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Novo Clipping @stop
+@section('title') Novo Clipping Rádio TV @stop
 
 @section('content')
 
@@ -8,13 +8,13 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="page-title">
-            <h1>Novo Clipping
+            <h1><i class="fa fa-television"></i> Novo Clipping Rádio e TV
                 <small></small>
             </h1>
             <ol class="breadcrumb">
                 <li><i class="fa fa-home"></i>  <a href="/home">Home</a></li>
                 <li class="active"><a href="/clipping">Clipping</a></li>
-                <li class="active">Novo Clipping</li>
+                <li class="active">Novo Clipping Rádio e TV</li>
                 @include('section.datahora')
             </ol>
         </div>
@@ -55,8 +55,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="deadline">DEAD LINE</label>
-                        <input type="time" class="form-control" name="deadline" placeholder="Hora Limite">
+                        <label for="programa">PROGRAMA / APRESENTADOR</label>
+                        <input type="text" class="form-control" name="text" placeholder="Programa / Apresentador">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -75,8 +75,8 @@
         <!-- Campo para o Objeto -->
         <div class="col-md-6">
             <div class="form-group">
-                <label for="obs">TEXTO</label>
-                <textarea class="form-control" name="obs" rows="5" placeholder="Obs:"></textarea>
+                <label for="assunto">ASSUNTO</label>
+                <textarea class="form-control" name="assunto" rows="5" placeholder="Texto:"></textarea>
             </div>
         </div>
     </div>
