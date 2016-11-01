@@ -34,7 +34,7 @@
     </thead>
 </table>
 
-<form action="{{ route('demandas.store') }}" method="POST"> 
+<form action="{{ route('clippingweb.store') }}" method="POST"> 
 {{ csrf_field() }}
     <div class="row">
         <div class="col-md-6">
@@ -53,16 +53,18 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="form-group">
                         <label for="link"><i class="fa fa-link"></i> LINK</label>
-                        <input type="link" class="form-control" name="link" placeholder="Link Web">
+                        <input type="url" class="form-control" name="link" placeholder="Link Web">
                     </div>
                 </div>
+            </div>
+            <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="status">SUPERINTENDENCIA</label>
-                        <select class="form-control" name="status">
+                        <label for="superintendencia"><i class="fa fa-leaf"></i> SUPERINTENDENCIA</label>
+                        <select class="form-control" name="superintendencia">
                             <option>Escolha o Departamento</option>
                             <option>APE - ENGENHARIA</option>
                             <option>DCAR - DEPARTAMENTO DE CONTROLE, AVALIAÇÃO E REGULAÇÃO</option>
@@ -78,6 +80,16 @@
                         </select>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="critica"><i class="fa fa-thumbs-o-up"></i> CRÍTICA</label>
+                        <select class="form-control" name="critica">
+                            <option value="up"> POSITIVA</option>
+                            <option value="down"> NEGATIVA</option>
+                            <option value="o-up"> NEUTRA</option>
+                        </select>
+                    </div>
+                </div>
             </div>
 
 
@@ -85,8 +97,8 @@
         <!-- Campo para o Objeto -->
         <div class="col-md-6">
             <div class="form-group">
-                <label for="obs">TEXTO</label>
-                <textarea class="form-control" name="obs" rows="5" placeholder="Sinópse da Matéria:"></textarea>
+                <label for="texto">TEXTO</label>
+                <textarea class="form-control" name="texto" rows="8" placeholder="Sinópse da Matéria:"></textarea>
             </div>
         </div>
     </div>

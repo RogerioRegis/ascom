@@ -2,9 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ClippingwebRequest;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ClippingWebController extends Controller
+use App\Clippingweb;
+use App\Http\Requests;
+
+class ClippingwebController extends Controller
 {
 	/**
      * Create a new controller instance.
@@ -22,7 +27,7 @@ class ClippingWebController extends Controller
      */
     public function index()
     {
-        $clippingweb = ClippingWeb::all();
+        $clippingweb = Clippingweb::all();
 
         return view('clippingweb.index', compact('clippingweb'));
     }
@@ -43,9 +48,9 @@ class ClippingWebController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ClippingWebRequest $request)
+    public function store(ClippingwebRequest $request)
     {
-        ClippingWeb::create($request->all());
+        Clippingweb::create($request->all());
 
         return redirect()->route('clippingweb.index');
     }
@@ -58,7 +63,9 @@ class ClippingWebController extends Controller
      */
     public function show($id)
     {
-        //
+        $clippingweb = Clippingweb::findOrFail($id);
+
+        return view('clippingweb.show', compact('clippingweb'));
     }
 
     /**

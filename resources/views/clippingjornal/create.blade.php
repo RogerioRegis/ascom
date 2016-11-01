@@ -8,7 +8,7 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="page-title">
-            <h1>Novo Clipping
+            <h1><i class="fa fa-newspaper-o"></i> Novo Clipping Jornal Impresso
                 <small></small>
             </h1>
             <ol class="breadcrumb">
@@ -41,13 +41,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="veiculo">VEÍCULO</label>
+                        <label for="veiculo"><i class="fa fa-newspaper-o"></i> VEÍCULO</label>
                         <input type="text" class="form-control" style="text-transform:uppercase" name="veiculo">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="data">DATA</label>
+                        <label for="data"><i class="fa fa-calendar"></i> DATA</label>
                         <input type="date" class="form-control" name="data" placeholder="dd/mm/aaaa">
                     </div>
                 </div>
@@ -55,16 +55,17 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="deadline">DEAD LINE</label>
-                        <input type="time" class="form-control" name="deadline" placeholder="Hora Limite">
+                        <label for="editorial"><i class="fa fa-edit"></i> EDITORIAL</label>
+                        <input type="text" class="form-control" name="editorial" placeholder="Editorial">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="status">STATUS</label>
+                        <label for="status"><i class="fa fa-thumbs-o-up"></i> CLASSIFICAÇÃO</label>
                         <select class="form-control" name="status">
-                            <option value="orange"><strong class="text-red">EM ABERTO</strong></option>
-                            <option value="green"><strong class="text-success">EXECULTADO</strong></option>
+                            <option value="up"><strong class="text-red">POSITIVO</strong></option>
+                            <option value="dawn"><strong class="text-success">NEGATIVO</strong></option>
+                            <option value="o-up"><strong class="text-success">NEUTRA</strong></option>
                         </select>
                     </div>
                 </div>
@@ -75,14 +76,14 @@
         <!-- Campo para o Objeto -->
         <div class="col-md-6">
             <div class="form-group">
-                <label for="obs">TEXTO</label>
-                <textarea class="form-control" name="obs" rows="5" placeholder="Obs:"></textarea>
+                <label for="sinopse"><i class="fa fa-file-text-o"></i> TEXTO</label>
+                <textarea class="form-control" name="sinopse" rows="5" placeholder="Sinópse:"></textarea>
             </div>
         </div>
     </div>
 
     <button type="submit" class="btn btn-success">Salvar</button>
-    <a href="{{ url('/clipping') }}" class="btn btn-blue">Cancelar</a>
+    <a href="{{ url('/clippingjornal') }}" class="btn btn-blue">Cancelar</a>
 
 </form>
 

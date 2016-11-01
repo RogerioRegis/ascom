@@ -22,9 +22,9 @@ Route::get('/home', 'HomeController@index');
 Route::resource('demandas', 'DemandasController');
 
 Route::resource('clipping', 'ClippingController');
-Route::resource('clippingjornal', 'ClippingJornalController');
-Route::resource('clippingradiotv', 'ClippingRadiotvController');
-Route::resource('clippingweb', 'ClippingWebController');
+Route::resource('clippingjornal', 'ClippingjornalController');
+Route::resource('clippingradiotv', 'ClippingradiotvController');
+Route::resource('clippingweb', 'ClippingwebController');
 
 Route::resource('perfil', 'PerfilController');
 
