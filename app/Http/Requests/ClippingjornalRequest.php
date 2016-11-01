@@ -4,14 +4,15 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class ClippingwebRequest extends FormRequest {
-
+class ClippingjornalRequest extends FormRequest
+{
     /**
      * Determine if the user is authorized to make this request.
      *
      * @return bool
      */
-    public function authorize() {
+    public function authorize()
+    {
         return true;
     }
 
@@ -20,12 +21,11 @@ class ClippingwebRequest extends FormRequest {
      *
      * @return array
      */
-    public function rules() {
+    public function rules()
+    {
         return [
             'veiculo' => 'required',
-            'data'    => 'required',
-            'link'    => 'required'
+            'data'    => 'required'
         ];
     }
-
 }

@@ -35,19 +35,19 @@
 </table>
 
 <form action="{{ route('demandas.store') }}" method="POST"> 
-{{ csrf_field() }}
+    {{ csrf_field() }}
     <div class="row">
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="veiculo">VEÍCULO</label>
+                        <label for="veiculo"><i class="fa fa-bullhorn"></i> VEÍCULO</label>
                         <input type="text" class="form-control" style="text-transform:uppercase" name="veiculo">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="data">DATA</label>
+                        <label for="data"><i class="fa fa-calendar"></i> DATA</label>
                         <input type="date" class="form-control" name="data" placeholder="dd/mm/aaaa">
                     </div>
                 </div>
@@ -55,13 +55,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="deadline">DEAD LINE</label>
+                        <label for="deadline"><i class="fa fa-clock-o"></i> DEAD LINE</label>
                         <input type="time" class="form-control" name="deadline" placeholder="Hora Limite">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="status">STATUS</label>
+                        <label for="status"><i class="fa fa-bell-o"></i> STATUS</label>
                         <select class="form-control" name="status">
                             <option value="orange"><strong class="text-red">EM ABERTO</strong></option>
                             <option value="green"><strong class="text-success">EXECULTADO</strong></option>
@@ -69,16 +69,16 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
         <!-- Campo para o Objeto -->
+        
         <div class="col-md-6">
             <div class="form-group">
-                <label for="obs">OBSERVAÇÕES</label>
+                <label for="obs"><i class="fa fa-file-text-o"></i> ASSUNTO</label>
                 <textarea class="form-control" name="obs" rows="5" placeholder="Obs:"></textarea>
             </div>
         </div>
+        
     </div>
 
     <button type="submit" class="btn btn-success">Salvar</button>

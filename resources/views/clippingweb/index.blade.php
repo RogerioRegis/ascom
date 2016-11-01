@@ -4,26 +4,40 @@
 
 @section('content')
 
-                    <!-- begin PAGE TITLE AREA -->
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="page-title">
-                                <h1>Clipping <small>da Internet</small></h1>
-                                <ol class="breadcrumb">
-                                    <li><i class="fa fa-home"></i><a href="/"> Home </a></li>
-                                    <li class="active"><a href="/clipping">Clipping</a></li>
-                                    <li class="active"> Clipping Web </li>
-                                    @include('section.datahora')
-                                </ol>
-                            </div>
-                        </div>
-                        <!-- /.col-lg-12 -->
-                    </div>
-                    <!-- /.row -->
-                    <!-- end PAGE TITLE AREA -->
+<!-- begin PAGE TITLE AREA -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="page-title">
+            <h1>Clipping <small>da Internet</small></h1>
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="/"> Home </a></li> <li class="active"> Clipping Web </li>
+                @include('section.datahora')
+            </ol>
+        </div>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<!-- end PAGE TITLE AREA -->
 
 
-                    @include('section.dashclipping')
+<div class="row">
+    <div class="col-lg-12 col-sm-6">
+        <div class="circle-tile">
+            <a href="{{ url('/clippingweb/create') }}">
+                <div class="circle-tile-heading orange">
+                    <i class="fa fa-at fa-fw fa-3x"></i>
+                </div>
+            </a>
+            <div class="circle-tile-content orange">
+                <div class="circle-tile-number text-faded">
+                    Web e Blogs
+                </div>
+                <a href="{{ url('/clippingweb') }}" class="circle-tile-footer">Mais Informações <i class="fa fa-chevron-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- begin ADVANCED TABLES ROW -->
@@ -60,12 +74,22 @@
                                 <td>{{$clipping->data}}</td>
                                 <td>{{$clipping->link}}</td>
                                 <td class="center"><button class="btn btn-xs btn-{{$clipping->status}}">Status da Critica</button></td>
-                                <td class="center">
-                                    <a href="clippingweb/{{ $clipping->id }}/edit" class="btn btn-default btn-xs"><i class="fa fa-edit"> </i> Editar</a>
-                                    <a href="{{ route('clippingweb.show', $clipping->id) }}" class="btn btn-success btn-xs"><i class="fa fa-eye">  </i> Vizualizar</a>
-                                    <a data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-danger btn-xs"> <i class="fa fa-trash"></i> Excrluir
-                                    <!--<a href="{{ url('clippingweb', $clipping->id) }}" data-method="DELETE" class="btn btn-danger btn-xs"> <i class="fa fa-trash"></i> Excrluir-->
-                                    </a>
+                                <td>
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <a href="clippingweb/{{ $clipping->id }}/edit" class="btn btn-default btn-xs btn-block"><i class="fa fa-edit"> </i> Editar</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="{{ route('clippingweb.show', $clipping->id) }}" class="btn btn-success btn-xs btn-block"><i class="fa fa-eye">  </i> Vizualizar</a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-danger btn-xs btn-block"> <i class="fa fa-trash"></i> Excrluir</a>
+                                        </div>
+                                    </div>
+                                        <!--<a href="clippingweb/{{ $clipping->id }}/edit" class="btn btn-default btn-xs"><i class="fa fa-edit"> </i> Editar</a>
+                                        <a href="{{ route('clippingweb.show', $clipping->id) }}" class="btn btn-success btn-xs"><i class="fa fa-eye">  </i> Vizualizar</a>
+                                        <a data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-danger btn-xs"> <i class="fa fa-trash"></i> Excrluir</a>
+                                        <a href="{{ url('clippingweb', $clipping->id) }}" data-method="DELETE" class="btn btn-danger btn-xs"> <i class="fa fa-trash"></i> Excrluir</a>-->
                                 </td>
                             </tr>
 
@@ -84,8 +108,6 @@
 </div>
 <!-- /.row -->
 
-<a class="btn btn-green" href="{{ route('clippingweb.create') }}">Novo Clipping + <span class="fa fa-paperclip"></span></a>
-
-
+<a class="btn btn-green" href="{{ route('clippingweb.create') }}">Novo Clipping + <span class="fa fa-at"></span></a>
 
 @endsection

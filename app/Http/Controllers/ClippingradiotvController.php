@@ -2,9 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Requests;
 
-class ClippingJornalController extends Controller
+use App\Http\Requests\ClippingradiotvRequest;
+use App\Clippingradiotv;
+
+class ClippingradiotvController extends Controller
 {
 	/**
      * Create a new controller instance.
@@ -22,7 +27,9 @@ class ClippingJornalController extends Controller
      */
     public function index()
     {
-        return view ('clippingjornal.index');
+        $clippingradiotv = Clippingradiotv::all();
+
+        return view('clippingradiotv.index', compact('clippingradiotv'));
     }
 
     /**
@@ -32,7 +39,7 @@ class ClippingJornalController extends Controller
      */
     public function create()
     {
-        return view ('clippingjornal.create');
+        return view ('clippingradiotv.create');
     }
 
     /**
@@ -41,9 +48,11 @@ class ClippingJornalController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ClippingradiotvRequest $request)
     {
-        //
+        Clippingradiotv::create($request->all());
+
+        return redirect()->route('clippingradiotv.index');
     }
 
     /**

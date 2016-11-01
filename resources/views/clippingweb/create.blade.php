@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title') Novo Clipping wEB @stop
+@section('title') Novo Clipping Web @stop
 
 @section('content')
 
@@ -70,6 +70,7 @@
                             <option>DCAR - DEPARTAMENTO DE CONTROLE, AVALIAÇÃO E REGULAÇÃO</option>
                             <option>DEAS - DIRETORIA EXECUTIVA DE ATENÇÃO A SAÚDE</option>
                             <option>DEVISA - DEPARTAMENTO DE VIGILÂNCIA SANITÁRIA</option>
+                            <option>GABINETE - GESTÃO</option>
                             <option>HCSA - HOSPITAL DA CRIANÇA SANTO ANTONIO</option>
                             <option>NID - NUCLEO DE INCLUSÃO DIGITAL</option>
                             <option>SAB - SUPERINTENDÊNCIA DE ATENÇÃO BÁSICA</option>
@@ -82,7 +83,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="critica"><i class="fa fa-thumbs-o-up"></i> CRÍTICA</label>
+                        <label for="critica"><i class="fa fa-thumbs-o-up"></i> CLASSIFICAÇÃO</label>
                         <select class="form-control" name="critica">
                             <option value="up"> POSITIVA</option>
                             <option value="down"> NEGATIVA</option>
@@ -97,16 +98,15 @@
         <!-- Campo para o Objeto -->
         <div class="col-md-6">
             <div class="form-group">
-                <label for="texto">TEXTO</label>
+                <label for="texto"><i class="fa fa-file-text-o"></i> TEXTO</label>
                 <textarea class="form-control" name="texto" rows="8" placeholder="Sinópse da Matéria:"></textarea>
             </div>
         </div>
     </div>
 
     <button type="submit" class="btn btn-success">Salvar</button>
-    <a href="{{ url('/clipping') }}" class="btn btn-blue">Cancelar</a>
+    <a href="{{ url('/clippingweb') }}" class="btn btn-blue">Cancelar</a>
 
 </form>
 
 @endsection
-

@@ -34,8 +34,8 @@
     </thead>
 </table>
 
-<form action="{{ route('demandas.store') }}" method="POST"> 
-{{ csrf_field() }}
+<form action="{{ route('clippingjornal.store') }}" method="POST"> 
+    {{ csrf_field() }}
     <div class="row">
         <div class="col-md-6">
             <div class="row">
@@ -55,14 +55,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="editorial"><i class="fa fa-edit"></i> EDITORIAL</label>
-                        <input type="text" class="form-control" name="editorial" placeholder="Editorial">
+                        <label for="editoria"><i class="fa fa-edit"></i> EDITORIA</label>
+                        <input type="text" class="form-control" name="editoria" placeholder="Editoria">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="status"><i class="fa fa-thumbs-o-up"></i> CLASSIFICAÇÃO</label>
-                        <select class="form-control" name="status">
+                        <label for="retorno"><i class="fa fa-thumbs-o-up"></i> CLASSIFICAÇÃO</label>
+                        <select class="form-control" name="retorno">
                             <option value="up"><strong class="text-red">POSITIVO</strong></option>
                             <option value="dawn"><strong class="text-success">NEGATIVO</strong></option>
                             <option value="o-up"><strong class="text-success">NEUTRA</strong></option>
@@ -71,13 +71,12 @@
                 </div>
             </div>
 
-
         </div>
         <!-- Campo para o Objeto -->
         <div class="col-md-6">
             <div class="form-group">
-                <label for="sinopse"><i class="fa fa-file-text-o"></i> TEXTO</label>
-                <textarea class="form-control" name="sinopse" rows="5" placeholder="Sinópse:"></textarea>
+                <label for="texto"><i class="fa fa-file-text-o"></i> ASSUNTO</label>
+                <textarea class="form-control" name="texto" rows="5" placeholder="Sinópse:"></textarea>
             </div>
         </div>
     </div>

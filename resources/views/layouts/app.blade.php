@@ -191,6 +191,35 @@
                             </a>
                         </li>
 
+
+
+                    <!-- begin MESSAGE CENTER DROPDOWN -->
+                    <li class="panel">
+                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#message-center">
+                            <i class="fa fa-paperclip"></i> CLIPPING <i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="collapse nav" id="message-center">
+                            <li>
+                                <a href="/clippingweb">
+                                    <i class="fa fa-at fa-2x"></i> Clipping <strong>WEB</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/clippingjornal">
+                                    <i class="fa fa-newspaper-o fa-2x"></i> Clipping <strong>JORNAL</strong>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/clippingradiotv">
+                                    <i class="fa fa-television fa-2x"></i> Clipping <strong>RÁDIO e TV</strong>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end MESSAGE CENTER DROPDOWN -->
+
+
+
                         <li>
                             <a class="active" href="/clipping">
                                 <i class="fa fa-paperclip"></i> CLIPPING

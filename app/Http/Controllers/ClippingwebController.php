@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ClippingwebRequest;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
-use App\Clippingweb;
 use App\Http\Requests;
 
-class ClippingwebController extends Controller
-{
-	/**
+use App\Http\Requests\ClippingwebRequest;
+use App\Clippingweb;
+
+class ClippingwebController extends Controller {
+
+    /**
      * Create a new controller instance.
      *
      * @return void
@@ -25,7 +25,7 @@ class ClippingwebController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index() 
     {
         $clippingweb = Clippingweb::all();
 
@@ -37,9 +37,9 @@ class ClippingwebController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create() 
     {
-        return view ('clippingweb.create');
+        return view('clippingweb.create');
     }
 
     /**
@@ -48,7 +48,7 @@ class ClippingwebController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(ClippingwebRequest $request)
+    public function store(ClippingwebRequest $request) 
     {
         Clippingweb::create($request->all());
 
@@ -61,8 +61,7 @@ class ClippingwebController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
+    public function show($id) {
         $clippingweb = Clippingweb::findOrFail($id);
 
         return view('clippingweb.show', compact('clippingweb'));
@@ -74,8 +73,7 @@ class ClippingwebController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
+    public function edit($id) {
         //
     }
 
@@ -86,8 +84,7 @@ class ClippingwebController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+    public function update(Request $request, $id) {
         //
     }
 
@@ -97,8 +94,8 @@ class ClippingwebController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
-    {
+    public function destroy($id) {
         //
     }
+
 }
