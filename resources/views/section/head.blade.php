@@ -8,6 +8,8 @@
 
     <title>@yield('title', 'ASCOM - SMSA')</title>
 
+    <link rel="icon" href="img/favicon.png" />
+
     <!-- PACE LOAD BAR PLUGIN - This creates the subtle load bar effect at the top of the page. -->
     <link href="/css/plugins/pace/pace.css" rel="stylesheet">
     <script src="/js/plugins/pace/pace.js"></script>

@@ -7,6 +7,8 @@
 
         <title>@yield('title', 'ASCOM - SMSA')</title>
 
+        <link rel="icon" href="img/favicon.png" />
+
         <!-- GLOBAL STYLES - Include these on every page. -->
         <link href="css/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel="stylesheet" type="text/css">
