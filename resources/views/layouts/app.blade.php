@@ -6,7 +6,6 @@
     <body>
         <div id="wrapper">
 
-
             <!-- begin TOP NAVIGATION -->
             <nav class="navbar-top" role="navigation">
 
@@ -55,8 +54,6 @@
                                 <!-- Alerts Dropdown Body - This is contained within a SlimScroll fixed height box. You can change the height using the SlimScroll jQuery features. -->
                                 <li id="alertScroll">
                                     <ul class="list-unstyled">
-
-
                                         <li>
                                             <a href="#">
                                                 <div class="alert-icon green pull-left">
@@ -70,8 +67,6 @@
                                                 </span>
                                             </a>
                                         </li>
-
-
                                     </ul>
                                 </li>
 
@@ -85,7 +80,6 @@
                         </li>
                         <!-- /.dropdown -->
                         <!-- end ALERTS DROPDOWN -->
-                        
 
                         <!-- Authentication Links -->
                         @if (Auth::guest())
@@ -102,7 +96,7 @@
                                     <a href="{{ url('/logout') }}"
                                        onclick="event.preventDefault();
                                                document.getElementById('logout-form').submit();">
-                                       <i class="fa fa-sign-out"></i> Sair <strong>{{ Auth::user()->name }}</strong>
+                                        <i class="fa fa-sign-out"></i> Sair <strong>{{ Auth::user()->name }}</strong>
                                     </a>
 
                                     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
@@ -113,37 +107,36 @@
                         </li>
                         @endif
 
+                        <!-- begin USER ACTIONS DROPDOWN -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="fa fa-user"></i>  <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li>
+                                    <a href="/perfil">
+                                        <i class="fa fa-user"></i> Meu Perfil
+                                    </a>
+                                </li>
 
-            <!-- begin USER ACTIONS DROPDOWN -->
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="fa fa-user"></i>  <i class="fa fa-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-user">
-                    <li>
-                        <a href="/perfil">
-                            <i class="fa fa-user"></i> Meu Perfil
-                        </a>
-                    </li>
+                                <li class="divider"></li>
 
-                    <li class="divider"></li>
-
-                    <li>
-                        <a href="#">
-                            <i class="fa fa-gear fa-spin"></i> Configurações
-                        </a>
-                    </li>
-                    <li>
-                        <a class="logout_open" href="#logout">
-                            <i class="fa fa-sign-out"></i> Sair
-                            <strong>{{ Auth::user()->name }}</strong>
-                        </a>
-                    </li>
-                </ul>
-                <!-- /.dropdown-menu -->
-            </li>
-            <!-- /.dropdown -->
-            <!-- end USER ACTIONS DROPDOWN -->
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-gear fa-spin"></i> Configurações
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="logout_open" href="#logout">
+                                        <i class="fa fa-sign-out"></i> Sair
+                                        <strong>{{ Auth::user()->name }}</strong>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- /.dropdown-menu -->
+                        </li>
+                        <!-- /.dropdown -->
+                        <!-- end USER ACTIONS DROPDOWN -->
 
 
                     </ul>
@@ -152,8 +145,6 @@
                 </div>
             </nav>
             <!-- end TOP NAVIGATION -->
-
-
 
             <!-- begin SIDE NAVIGATION -->
             <nav class="navbar-side" role="navigation">
@@ -167,14 +158,14 @@
                         </li>
                         <!-- end SIDE NAV USER PANEL -->
                         <!-- begin SIDE NAV SEARCH -->
-                                    <li class="nav-search">
-                                        <form role="form">
-                                            <input type="search" class="form-control" placeholder="Search...">
-                                            <button class="btn">
-                                                <i class="fa fa-search"></i>
-                                            </button>
-                                        </form>
-                                    </li>
+                        <li class="nav-search">
+                            <form role="form">
+                                <input type="search" class="form-control" placeholder="Search...">
+                                <button class="btn">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </li>
                         <!-- end SIDE NAV SEARCH -->
 
                         <!-- begin DASHBOARD LINK -->
@@ -191,41 +182,31 @@
                             </a>
                         </li>
 
-
-
-                    <!-- begin MESSAGE CENTER DROPDOWN -->
-                    <li class="panel">
-                        <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#message-center">
-                            <i class="fa fa-paperclip"></i> CLIPPING <i class="fa fa-caret-down"></i>
-                        </a>
-                        <ul class="collapse nav" id="message-center">
-                            <li>
-                                <a href="/clippingweb">
-                                    <i class="fa fa-at fa-2x"></i> Clipping <strong>WEB</strong>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/clippingjornal">
-                                    <i class="fa fa-newspaper-o fa-2x"></i> Clipping <strong>JORNAL</strong>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/clippingradiotv">
-                                    <i class="fa fa-television fa-2x"></i> Clipping <strong>RÁDIO e TV</strong>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- end MESSAGE CENTER DROPDOWN -->
-
-
-
-                        <li>
-                            <a class="active" href="/clipping">
-                                <i class="fa fa-paperclip"></i> CLIPPING
+                        <!-- begin MESSAGE CENTER DROPDOWN -->
+                        <li class="panel">
+                            <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#message-center">
+                                <i class="fa fa-paperclip"></i> CLIPPING <i class="fa fa-caret-down"></i>
                             </a>
+                            <ul class="collapse nav" id="message-center">
+                                <li>
+                                    <a href="/clippingweb">
+                                        <i class="fa fa-at fa-2x"></i> Clipping <strong>WEB</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/clippingjornal">
+                                        <i class="fa fa-newspaper-o fa-2x"></i> Clipping <strong>JORNAL</strong>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/clippingradiotv">
+                                        <i class="fa fa-television fa-2x"></i> Clipping <strong>RÁDIO e TV</strong>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
-                        
+                        <!-- end MESSAGE CENTER DROPDOWN -->
+
                         <li>
                             <a class="active" href="/deadlines">
                                 <i class="fa fa-bell"></i> DEADLINE
@@ -266,13 +247,13 @@
 
                     @yield('content')
 
-                    
-                
+
+
                 </div>
                 <!-- /.page-content -->
-            
-            <hr>
-            
+
+                <hr>
+
             </div>
             <!-- /#page-wrapper -->
             <!-- end MAIN PAGE CONTENT -->
