@@ -27,7 +27,7 @@
         <div class="portlet portlet-default">
             <div class="portlet-heading">
                 <div class="portlet-title">
-                    <h4>Dados das Demandas</h4>
+                    <h4>Lista de Demandas</h4>
                 </div>
                 <div class="clearfix"></div>
             </div>

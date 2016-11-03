@@ -13,6 +13,7 @@
                 <small>Visão Geral do Conteúdo</small>
             </h1>
             <ol class="breadcrumb">
+                <li class="active"><i class="fa fa-home"></i> Home</li>
                 @include('section.datahora')
             </ol>
         </div>

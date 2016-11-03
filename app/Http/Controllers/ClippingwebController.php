@@ -27,7 +27,7 @@ class ClippingwebController extends Controller {
      */
     public function index() 
     {
-        $clippingweb = Clippingweb::all();
+        $clippingweb = Clippingweb::orderBy('id','DESC');
 
         return view('clippingweb.index', compact('clippingweb'));
     }

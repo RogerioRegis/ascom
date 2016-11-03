@@ -101,8 +101,6 @@
             <!-- /.navbar-top -->
             <!-- end TOP NAVIGATION -->
 
-
-
             <!-- begin SIDE NAVIGATION -->
             <nav class="navbar-side" role="navigation">
                 <div class="navbar-collapse sidebar-collapse collapse">
@@ -131,14 +129,10 @@
             <!-- /.navbar-side -->
             <!-- end SIDE NAVIGATION -->
 
-
-
             <!-- begin MAIN PAGE CONTENT -->
             <div id="page-wrapper">
 
                 <div class="content">  
-
-
 
                     <!-- begin PAGE TITLE AREA -->
                     <!-- Use this section for each page's title and breadcrumb layout. In this example a date range picker is included within the breadcrumb. -->

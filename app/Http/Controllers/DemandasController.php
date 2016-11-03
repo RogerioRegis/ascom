@@ -29,6 +29,8 @@ class DemandasController extends Controller {
 
         $demandas = Demanda::all();
 
+        //$demandas = Demanda::orderBy('id','ASC');
+
         return view('demandas.index', compact('demandas'));
     }
 

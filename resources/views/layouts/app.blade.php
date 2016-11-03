@@ -172,20 +172,20 @@
                         <!-- begin DASHBOARD LINK -->
                         <li>
                             <a class="active" href="/home">
-                                <i class="fa fa-home"></i> INÍCIO
+                                <i class="fa fa-home fa-2x"></i> INÍCIO
                             </a>
                         </li>
 
                         <li>
                             <a class="active" href="/demandas">
-                                <i class="fa fa-bullhorn"></i> DEMANDAS
+                                <i class="fa fa-bullhorn fa-2x"></i> DEMANDAS
                             </a>
                         </li>
 
                         <!-- begin MESSAGE CENTER DROPDOWN -->
                         <li class="panel">
                             <a href="javascript:;" data-parent="#side" data-toggle="collapse" class="accordion-toggle" data-target="#message-center">
-                                <i class="fa fa-paperclip"></i> CLIPPING <i class="fa fa-caret-down"></i>
+                                <i class="fa fa-paperclip fa-2x"></i> CLIPPING <i class="fa fa-caret-down"></i>
                             </a>
                             <ul class="collapse nav" id="message-center">
                                 <li>
@@ -209,25 +209,25 @@
 
                         <li>
                             <a class="active" href="/deadlines">
-                                <i class="fa fa-bell"></i> DEADLINE
+                                <i class="fa fa-bell fa-2x"></i> DEADLINE
                             </a>
                         </li>
 
                         <li>
                             <a class="active" href="/entrevistas">
-                                <i class="fa fa-microphone"></i> ENTREVISTAS
+                                <i class="fa fa-microphone fa-2x"></i> ENTREVISTAS
                             </a>
                         </li>
 
                         <li>
                             <a class="active" href="/calendario">
-                                <i class="fa fa-calendar"></i> CALENDÁRIO
+                                <i class="fa fa-calendar fa-2x"></i> CALENDÁRIO
                             </a>
                         </li>
 
                         <li>
                             <a class="active" href="/relatorios">
-                                <i class="fa fa-file-pdf-o"></i> RELATÓRIOS
+                                <i class="fa fa-file-pdf-o fa-2x"></i> RELATÓRIOS
                             </a>
                         </li>
                         <!-- end DASHBOARD LINK -->

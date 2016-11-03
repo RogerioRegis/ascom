@@ -28,7 +28,7 @@
     <thead>
         <tr class="active">
             <th colspan="4" class="text-center">
-                <h4><strong>CONTROLE DE CONTRATO<strong></h4>
+                <h4><strong>DETALHES DA DEMANDA<strong></h4>
                             </th>
                             </tr>
                             </thead>
