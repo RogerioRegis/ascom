@@ -59,7 +59,7 @@
                                 <th>VEÍCULO</th>
                                 <th>DATA</th>
                                 <th>LINK</th>
-                                <th>SUPERINTENDÊNCIA</th>
+                                <th>CLASSIFICAÇÃO</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -73,7 +73,8 @@
                                 <td style="text-transform:uppercase"><a href="{{ route('clippingweb.show', $clipping->id) }}">{{$clipping->veiculo}}</a></td>
                                 <td>{{$clipping->data}}</td>
                                 <td>{{$clipping->link}}</td>
-                                <td class="center"><button class="btn btn-xs btn-{{$clipping->status}}">Status da Critica</button></td>
+                                <td class="center"><button class="btn btn-xs btn-{{$clipping->status}}"> Status da Critica</button></td>
+                                <i class="fa fa-thumbs-{{$clipping->status}} fa-2x text-blue"></i>
                                 <td>
                                     <div class="row">
                                         <div class="col-md-4">
