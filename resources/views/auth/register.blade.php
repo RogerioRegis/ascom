@@ -11,8 +11,6 @@
             
             <div class="page-title"><ol class="breadcrumb"></ol></div>
 
-            @include('section.erro')
-
             <div class="portlet portlet-green">
                 <div class="portlet-heading">
                     <div class="portlet-title">
@@ -98,6 +96,7 @@
                             </div>
                         </div>
                     </form>
+
                     </div>
                 </div>
             </div>

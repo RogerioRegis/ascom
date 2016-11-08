@@ -27,7 +27,7 @@ class ClippingwebController extends Controller {
      */
     public function index() 
     {
-        $clippingweb = Clippingweb::orderBy('id','DESC');
+        $clippingweb = Clippingweb::all();
 
         return view('clippingweb.index', compact('clippingweb'));
     }
@@ -62,6 +62,7 @@ class ClippingwebController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function show($id) {
+        
         $clippingweb = Clippingweb::findOrFail($id);
 
         return view('clippingweb.show', compact('clippingweb'));
@@ -74,7 +75,10 @@ class ClippingwebController extends Controller {
      * @return \Illuminate\Http\Response
      */
     public function edit($id) {
-        //
+
+        $clippingweb = Clippingweb::findOrFail($id);
+
+        return view('clippingweb.edit', compact('clippingweb'));
     }
 
     /**
@@ -84,8 +88,13 @@ class ClippingwebController extends Controller {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id) {
-        //
+    public function update(ClippingwebRequest $request, $id) {
+
+        $clippingweb = Clippingweb::findOrFail($id);
+
+        $clippingweb->update($request->all());
+
+        return redirect()->route('clippingweb.index');
     }
 
     /**

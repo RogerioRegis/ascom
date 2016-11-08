@@ -86,27 +86,31 @@
                         <label for="critica"><i class="fa fa-thumbs-o-up"></i> CLASSIFICAÇÃO</label>
                         <select class="form-control" name="critica">
                             <option value="up"> POSITIVA</option>
-                            <option value="down"> NEGATIVA</option>
+                            <option value="down text-red"> NEGATIVA</option>
                             <option value="o-up"> NEUTRA</option>
                         </select>
                     </div>
                 </div>
             </div>
-
-
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="titulo"><i class="fa fa-text-width"></i> TÍTULO</label>
+                        <input type="text" class="form-control" name="titulo" placeholder="Título">
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Campo para o Objeto -->
         <div class="col-md-6">
             <div class="form-group">
                 <label for="texto"><i class="fa fa-file-text-o"></i> TEXTO</label>
-                <textarea class="form-control" name="texto" rows="8" placeholder="Sinópse da Matéria:"></textarea>
+                <textarea class="form-control" name="texto" rows="12" placeholder="Sinópse da Matéria:"></textarea>
             </div>
         </div>
     </div>
 
-    <button type="submit" class="btn btn-success">Salvar</button>
-    <a href="{{ url('/clippingweb') }}" class="btn btn-blue">Cancelar</a>
-
-</form>
+    <button type="submit" class="btn btn-success"> Salvar <i class="fa fa-save"></i> </button>
+    <a href="{{ url('/clippingweb') }}" class="btn btn-blue"><i class="fa fa-reply"></i> Cancelar <i class="fa fa-arow"></i> </a>
 
 @endsection

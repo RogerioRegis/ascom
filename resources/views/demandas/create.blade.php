@@ -64,7 +64,7 @@
                         <label for="status"><i class="fa fa-bell-o"></i> STATUS</label>
                         <select class="form-control" name="status">
                             <option value="orange"><strong class="text-red">EM ABERTO</strong></option>
-                            <option value="green"><strong class="text-success">EXECULTADO</strong></option>
+                            <option value="green"><strong class="text-success">EXECUTADO</strong></option>
                         </select>
                     </div>
                 </div>

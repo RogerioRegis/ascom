@@ -60,7 +60,7 @@
                         <label for="status">STATUS</label>
                         <select class="form-control" name="status">
                             <option value="danger" class="text-red"><strong>EM ABERTO</strong></option>
-                            <option value="green"><strong>EXECULTADO</strong></option>
+                            <option value="green"><strong>EXECUTADO</strong></option>
                         </select>
                     </div>
                 </div>

@@ -68,7 +68,7 @@
             <!-- end TOP NAVIGATION -->
             @yield('content')
 
-            <hr>
+            <br>
             
         </div>
         <!-- /#wrapper -->

@@ -62,7 +62,6 @@
 
                             <a href="{{ url('/clippingweb/create') }}" class="btn btn-blue" data-whatever="@getbootstrap"><i class="fa fa-plus-circle"></i> NOVO CLIPPING</a>
 
-                            <a href="{{ url('#') }}" class="btn btn-default">Gerar <i class="fa fa-file-pdf-o"></i> PDF</a>
-
+                            <a href="{{ $clippingweb->id }}/edit" class="btn btn-default"><i class="fa fa-edit"> </i> Editar</a>
 
                             @endsection

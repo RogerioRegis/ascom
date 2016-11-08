@@ -209,7 +209,7 @@
 
                         <li>
                             <a class="active" href="/deadlines">
-                                <i class="fa fa-bell fa-2x"></i> DEADLINE
+                                <i class="fa fa-clock-o fa-2x"></i> DEADLINE
                             </a>
                         </li>
 
@@ -247,12 +247,10 @@
 
                     @yield('content')
 
-
-
                 </div>
                 <!-- /.page-content -->
 
-                <hr>
+                <br>
 
             </div>
             <!-- /#page-wrapper -->

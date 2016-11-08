@@ -7,10 +7,10 @@
 <br>
 <div class="row">
     <div class="col-md-4 col-md-offset-4">
-        <div class="login-banner text-center">
-            <h1><i class="fa fa-comments"></i> ASCOM - SMSA</h1>
-            Assessoria de Comunicação
-        </div>
+        <br>
+        <div class="text-center text-with" style="color: #fff">
+        <h1><i class="fa fa-comments"></i> ASCOM - SMSA</h1>
+        Assessoria de Comunicação</div><br>
         
         @include('section.erro')
         
@@ -52,9 +52,7 @@
                 </form>
             </div>
         </div>
-        <div class="login-banner text-center">
-        NID - Núcleo de Inclusão Digital<br>Secretaria Municipal de Saúde
-        </div>
+        <div class="text-center text-with" style="color: #fff">Secretaria Municipal de Saúde</div>
     </div>
 </div>
 
@@ -65,31 +63,79 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Envie um solicitação</h4>
+                <h4 class="modal-title" id="exampleModalLabel">Registro de Novo Usuário</h4>
             </div>
             <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="recipient-name" class="control-label">Nome:</label>
-                        <input type="text" class="form-control" id="recipient-name" placeholder="Usuário">
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="control-label">Telefone:</label>
-                        <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="control-label">E-mail:</label>
-                        <input type="email" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="form-group">
-                        <label for="message-text" class="control-label">Mensagem:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                </form>
+                        <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                        {{ csrf_field() }}
+
+                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                            <label for="name" class="col-md-4 control-label">Nome</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" placeholder="Name">
+
+                                @if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="email" class="col-md-4 control-label">E-Mail</label>
+
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="Email">
+
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            <label for="password" class="col-md-4 control-label">Senha</label>
+
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
+                            <label for="password-confirm" class="col-md-4 control-label">Confirma Senha</label>
+
+                            <div class="col-md-6">
+                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password">
+
+                                @if ($errors->has('password_confirmation'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Registrar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
         </div>
     </div>

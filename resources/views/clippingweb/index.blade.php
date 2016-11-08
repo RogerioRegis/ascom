@@ -58,8 +58,8 @@
                             <tr>
                                 <th>VEÍCULO</th>
                                 <th>DATA</th>
-                                <th>LINK</th>
-                                <th>CLASSIFICAÇÃO</th>
+                                <th>TÍTULO</th>
+                                <th class="text-center">CLASSIFICAÇÃO</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -72,9 +72,8 @@
                             <tr class="odd gradeX">
                                 <td style="text-transform:uppercase"><a href="{{ route('clippingweb.show', $clipping->id) }}">{{$clipping->veiculo}}</a></td>
                                 <td>{{$clipping->data}}</td>
-                                <td>{{$clipping->link}}</td>
-                                <td class="center"><button class="btn btn-xs btn-{{$clipping->status}}"> Status da Critica</button></td>
-                                <i class="fa fa-thumbs-{{$clipping->status}} fa-2x text-blue"></i>
+                                <td>{{$clipping->titulo}}</td>
+                                <td class="text-center"><i class="fa fa-thumbs-{{$clipping->critica}} fa-2x text-blue"></i></td>
                                 <td>
                                     <div class="row">
                                         <div class="col-md-4">
