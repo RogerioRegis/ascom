@@ -50,7 +50,7 @@
                                     <td class="text-center active"><strong>SUPERINTENDENCIA:</strong> {{$clippingweb->superintendencia}}</td>
                                 </tr>
                                 <tr>
-                                    <td colspan="3" class="active"><strong>SINÓPSE: </strong>{{$clippingweb->texto}}</td>
+                                    <td colspan="3" class="active"><strong>{{$clippingweb->titulo}}: </strong>{{$clippingweb->texto}}</td>
                                 </tr>
 
                             </tbody>

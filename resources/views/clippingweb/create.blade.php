@@ -85,9 +85,9 @@
                     <div class="form-group">
                         <label for="critica"><i class="fa fa-thumbs-o-up"></i> CLASSIFICAÇÃO</label>
                         <select class="form-control" name="critica">
-                            <option value="up"> POSITIVA</option>
-                            <option value="down text-red"> NEGATIVA</option>
-                            <option value="o-up"> NEUTRA</option>
+                            <option value="up"> POSITIVA </option>
+                            <option value="down text-red"> NEGATIVA </option>
+                            <option value="o-up"> NEUTRA </option>
                         </select>
                     </div>
                 </div>

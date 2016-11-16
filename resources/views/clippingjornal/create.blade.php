@@ -41,13 +41,13 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="veiculo"><i class="fa fa-newspaper-o"></i> VEÍCULO</label>
+                        <label for="veiculo"><i class="fa fa-newspaper-o"></i> VEÍCULO </label>
                         <input type="text" class="form-control" style="text-transform:uppercase" name="veiculo">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="data"><i class="fa fa-calendar"></i> DATA</label>
+                        <label for="data"><i class="fa fa-calendar"></i> DATA </label>
                         <input type="date" class="form-control" name="data" placeholder="dd/mm/aaaa">
                     </div>
                 </div>
@@ -55,17 +55,17 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="editoria"><i class="fa fa-edit"></i> EDITORIA</label>
+                        <label for="editoria"><i class="fa fa-edit"></i> EDITORIA </label>
                         <input type="text" class="form-control" name="editoria" placeholder="Editoria">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <label for="retorno"><i class="fa fa-thumbs-o-up"></i> CLASSIFICAÇÃO</label>
-                        <select class="form-control" name="retorno">
-                            <option value="up"><strong class="text-red">POSITIVO</strong></option>
-                            <option value="dawn"><strong class="text-success">NEGATIVO</strong></option>
-                            <option value="o-up"><strong class="text-success">NEUTRA</strong></option>
+                        <label for="critica"><i class="fa fa-thumbs-o-up"></i> CLASSIFICAÇÃO </label>
+                        <select class="form-control" name="critica">
+                            <option value="up"> POSITIVO </option>
+                            <option value="dawn text-red"> NEGATIVO </option>
+                            <option value="o-up"> NEUTRA </option>
                         </select>
                     </div>
                 </div>
@@ -75,7 +75,7 @@
         <!-- Campo para o Objeto -->
         <div class="col-md-6">
             <div class="form-group">
-                <label for="texto"><i class="fa fa-file-text-o"></i> ASSUNTO</label>
+                <label for="texto"><i class="fa fa-file-text-o"></i> ASSUNTO </label>
                 <textarea class="form-control" name="texto" rows="5" placeholder="Sinópse:"></textarea>
             </div>
         </div>

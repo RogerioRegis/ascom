@@ -64,7 +64,6 @@
                             </tr>
                         </thead>
 
-
                         <tbody>
 
                             @foreach($clippingweb as $clipping)

@@ -57,7 +57,7 @@
                                 <th>VEÍCULO</th>
                                 <th>DATA</th>
                                 <th>EDITORIA</th>
-                                <th>CLASSIFICAÇÃO</th>
+                                <th class="text-center">CLASSIFICAÇÃO</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -68,26 +68,26 @@
                             @foreach($clippingjornal as $clipping)
 
                             <tr class="odd gradeX">
-                                <td style="text-transform:uppercase"><a href="{{ route('clippingweb.show', $clipping->id) }}">{{$clipping->veiculo}}</a></td>
+                                <td style="text-transform:uppercase"><a href="{{ route('clippingjornal.show', $clipping->id) }}">{{$clipping->veiculo}}</a></td>
                                 <td>{{$clipping->data}}</td>
                                 <td>{{$clipping->editoria}}</td>
-                                <td class="center"><i class="fa fa-thumbs-{{$clipping->retorno}}"></i> Status da Critica</td>
+                                <td class="text-center"><i class="fa fa-thumbs-{{$clipping->critica}} fa-2x text-blue"></i></td>
                                 <td>
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <a href="clippingweb/{{ $clipping->id }}/edit" class="btn btn-default btn-xs btn-block"><i class="fa fa-edit"> </i> Editar</a>
+                                            <a href="clippingjornal/{{ $clipping->id }}/edit" class="btn btn-default btn-xs btn-block"><i class="fa fa-edit"> </i> Editar</a>
                                         </div>
                                         <div class="col-md-4">
-                                            <a href="{{ route('clippingweb.show', $clipping->id) }}" class="btn btn-success btn-xs btn-block"><i class="fa fa-eye">  </i> Vizualizar</a>
+                                            <a href="{{ route('clippingjornal.show', $clipping->id) }}" class="btn btn-success btn-xs btn-block"><i class="fa fa-eye">  </i> Vizualizar</a>
                                         </div>
                                         <div class="col-md-4">
                                             <a data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-danger btn-xs btn-block"> <i class="fa fa-trash"></i> Excrluir</a>
                                         </div>
                                     </div>
-                                        <!--<a href="clippingweb/{{ $clipping->id }}/edit" class="btn btn-default btn-xs"><i class="fa fa-edit"> </i> Editar</a>
-                                        <a href="{{ route('clippingweb.show', $clipping->id) }}" class="btn btn-success btn-xs"><i class="fa fa-eye">  </i> Vizualizar</a>
+                                        <!--<a href="clippingjornal/{{ $clipping->id }}/edit" class="btn btn-default btn-xs"><i class="fa fa-edit"> </i> Editar</a>
+                                        <a href="{{ route('clippingjornal.show', $clipping->id) }}" class="btn btn-success btn-xs"><i class="fa fa-eye">  </i> Vizualizar</a>
                                         <a data-toggle="modal" data-target=".bs-example-modal-sm" class="btn btn-danger btn-xs"> <i class="fa fa-trash"></i> Excrluir</a>
-                                        <a href="{{ url('clippingweb', $clipping->id) }}" data-method="DELETE" class="btn btn-danger btn-xs"> <i class="fa fa-trash"></i> Excrluir</a>-->
+                                        <a href="{{ url('clippingjornal', $clipping->id) }}" data-method="DELETE" class="btn btn-danger btn-xs"> <i class="fa fa-trash"></i> Excrluir</a>-->
                                 </td>
                             </tr>
 
