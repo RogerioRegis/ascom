@@ -2,22 +2,24 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+
 use App\Http\Requests;
-
-use App\Http\Requests\ClippingwebRequest;
+use App\Http\Controllers\Controller;
+use App\user;
+use App\Pais;
 use App\Clippingweb;
+use App\Clippingjornal;
+use App\Clippingradiotv;
 
-class RelatoriosController extends Controller
-{
+class PdfController extends Controller {
+
     /**
      * Create a new controller instance.
      *
      * @return void
      */
-    public function __construct()
-    {
+    public function __construct() {
         $this->middleware('auth');
     }
 
@@ -28,10 +30,46 @@ class RelatoriosController extends Controller
      */
     public function index()
     {
-        $clippingweb = Clippingweb::all();
-
-        return view('clippingweb.index', compact('clippingweb'));
+        //$clippingweb = Clippingweb::all();
+        return view('relatorios.index');
+        //return view('relatorios.index', compact('clippingweb'));
     }
+
+    /**
+     * Para criar o relatório em PDF.
+     *
+     * @return \Illuminate\Http\Response
+     */
+      public function crearPDF($datos,$vistaurl,$tipo)
+    {
+
+        $data = $datos;
+        $date = date('Y-m-d');
+        $view =  \View::make($vistaurl, compact('data', 'date'))->render();
+        $pdf = \App::make('dompdf.wrapper');
+        $pdf->loadHTML($view);
+        
+        if($tipo==1){return $pdf->stream('reporte');}
+        if($tipo==2){return $pdf->download('reporte.pdf'); }
+    }
+
+
+    public function crear_reporte_porpais($tipo){
+
+     $vistaurl="pdf.reporte_por_pais";
+     $paises=Pais::all();
+     
+     return $this->crearPDF($paises, $vistaurl,$tipo);
+
+
+
+
+    }
+
+
+
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -40,7 +78,7 @@ class RelatoriosController extends Controller
      */
     public function create()
     {
-        return view('relatorios.create');
+        
     }
 
     /**

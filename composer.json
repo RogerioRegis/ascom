@@ -9,7 +9,9 @@
         "laravel/framework": "5.3.*",
         "laravelcollective/html": "5.3.*",
         "doctrine/dbal": "^2.5",
-        "caouecs/laravel-lang": "~3.0"
+        "caouecs/laravel-lang": "~3.0",
+        "barryvdh/laravel-dompdf": "^0.7.0",
+        "dompdf/dompdf": "^0.7.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

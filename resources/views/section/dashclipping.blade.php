@@ -2,7 +2,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
-                                <a href="{{ url('/clippingradiotv/create') }}">
+                                <a href="{{ url('/clippingradiotv') }}">
                                     <div class="circle-tile-heading dark-blue">
                                         <i class="fa fa-television fa-fw fa-3x"></i>
                                     </div>
@@ -18,7 +18,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
-                                <a href="{{ url('/clippingjornal/create') }}">
+                                <a href="{{ url('/clippingjornal') }}">
                                     <div class="circle-tile-heading green">
                                         <i class="fa fa-newspaper-o fa-fw fa-3x"></i>
                                     </div>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="circle-tile">
-                                <a href="{{ url('/clippingweb/create') }}">
+                                <a href="{{ url('/clippingweb') }}">
                                     <div class="circle-tile-heading orange">
                                         <i class="fa fa-at fa-fw fa-3x"></i>
                                     </div>
